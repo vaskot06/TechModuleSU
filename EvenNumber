@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class EvenNumber {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int evenNumber = Integer.parseInt(scanner.nextLine());
+
+        while (Math.abs(evenNumber) % 2 == 1){
+            if (evenNumber == 0){
+                break;
+            }
+            System.out.println("Please write an even number.");
+
+            evenNumber = Integer.parseInt(scanner.nextLine());
+         }
+
+        System.out.println("The number is: " + Math.abs(evenNumber));
+    }
+}
